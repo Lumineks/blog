@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Blog</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+    <div class="container">
+        <div class="header__inner header__inner--large">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a class="header__logo" href="#">
+                <img class="header__logo-image" src="images/logo.svg" alt="logo">
+            </a>
+            <nav class="header__menu">
+                <div class="header__wrapper">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link header__link--active" href="#">Поиск работы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Учеба и работа</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Заработок</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Категории и рубрики</a>
+                            <div class="header__dropdown">
+                                <ul class="header__dropdown-list">
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Популярное
+                                        </a>
+                                    </li>
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Способы поиска работы
+                                        </a>
+                                    </li>
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Соц сети
+                                        </a>
+                                    </li>
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Приложения
+                                        </a>
+                                    </li>
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Студенту    
+                                        </a>
+                                    </li>
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Интернет
+                                        </a>
+                                    </li>
+                                    <li class="header__dropdown-item">
+                                        <a class="header__dropdown-link" href="#">
+                                            Все рубрики
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>                    
+                    <div class="header__menu-image">
+                        <img class="header__menu-logo" src="images/logo-menu.png" alt="logo">
+                    </div>
+                    <div class="header__add-info">
+                        <a class="header__conditions" href="#">
+                            Условия использования
+                        </a>
+                        <div class="header__bottom">
+                            <div class="header__copy">
+                                © 2020 “Profit Blog”
+                            </div>
+                            <ul class="header__social">
+                                <li class="header__social-item">
+                                    <a class="header__social-link" href="#" style="background-image: url(images/icons/instagram-icon-menu.svg);"></a>
+                                </li>
+                                <li class="header__social-item">
+                                    <a class="header__social-link" href="#" style="background-image: url(images/icons/telegram-icon-menu.svg);"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu-closer"></div>
+            </nav>
+            <form action="" class="header__form">
+                <label class="header__form-close"></label>
+                <label class="header__search-label">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path class="header__icon" d="M23.1175 20.5481C21.6406 19.0863 20.1763 17.6125 18.705 16.145C18.645 16.085 18.5644 16.0463 18.5406 16.0294C18.8881 15.3606 19.26 14.775 19.5106 14.1412C20.9325 10.5444 20.4956 7.14875 18.2181 4.04063C16.595 1.82625 14.3281 0.60375 11.6356 0.1525C11.3681 0.1075 11.0975 0.081875 10.8281 0.046875H9.46875C9.07 0.106875 8.66687 0.1475 8.2725 0.23C5.11188 0.89125 2.71187 2.59375 1.18062 5.46125C0.526875 6.68563 0.13625 7.99375 0.036875 9.38375C0.03375 9.42813 0.0125 9.47188 0 9.51562V10.875C0.060625 11.2825 0.099375 11.695 0.185 12.0975C0.88875 15.4144 2.7 17.9137 5.79375 19.3481C9.22312 20.9388 12.5781 20.695 15.7812 18.6513C15.8075 18.6344 15.8338 18.6181 15.8606 18.6025C15.8744 18.595 15.89 18.5912 15.9631 18.5637C16.0681 18.685 16.1825 18.8337 16.3137 18.965C17.7219 20.3738 19.1369 21.7756 20.54 23.1887C20.9181 23.5694 21.3 23.9269 21.8438 24.0469H22.4531C22.7656 23.8825 23.1019 23.7506 23.3856 23.5462C23.7313 23.2975 23.8875 22.9037 24 22.5V21.8906C23.8769 21.3306 23.51 20.9369 23.1175 20.5481ZM10.1619 16.66C6.61187 16.7269 3.69313 13.6575 3.67875 10.2319C3.66438 6.7075 6.66438 3.74187 10.1225 3.72563C13.61 3.71 16.6244 6.66813 16.6281 10.1925C16.6319 13.6888 13.6687 16.725 10.1619 16.66Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.046875)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>        
+                </label>
+                <input class="header__search" type="search" placeholder="Поиск" required>               
+            </form>
+        </div>
+    </div>
+</header>
+
+
+            <main class="main">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <div class="breadcrumbs__inner box">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link breadcrumbs__link--icon" href="#">
+                                        <img class="breadcrumbs__home-image" src="images/icons/home.svg" alt=""></a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link breadcrumbs__link--disabled" href="#">
+                                    Поиск работы
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="category">
+                    <div class="container">
+                        <div class="category__inner">
+                            <div class="category__content">
+                                <div class="category__top active">
+                                    <h1 class="category__title">
+                                        <span>Поиск работы</span>
+                                        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.383614 13.7463L1.16977 14.584C1.41718 14.8456 1.74636 14.9897 2.09816 14.9897C2.44978 14.9897 2.77934 14.8456 3.02676 14.584L11.9946 5.09422L20.9729 14.5945C21.2199 14.8561 21.5494 15 21.9011 15C22.2527 15 22.5824 14.8561 22.8296 14.5945L23.616 13.762C24.128 13.2206 24.128 12.3388 23.616 11.7975L12.9264 0.44556C12.6793 0.184171 12.3502 -1.01846e-06 11.9954 -1.04947e-06L11.9913 -1.04983e-06C11.6395 -1.08059e-06 11.3103 0.184377 11.0633 0.44556L0.383614 11.7667C0.136196 12.0281 0.000389328 12.3869 1.95916e-07 12.759C1.63372e-07 13.1312 0.136196 13.4851 0.383614 13.7463Z"/>
+                                            </svg>
+                                    </h1>
+                                    <div class="category__dropdown">
+                                        <div class="category__dropdown-content">
+                                            Я не понял что за описание тут должно быть так что думайте сами) А я тупо вставлю сюда какой то текст непонятный. А ну и размеры поменяю, хз когда, но поменяю.
+                                            Когда человек идет на работу в рекламное агентство, он представляет, что будет придумывать и снимать рекламу.
+                                        </div>
+                                    </div>
+                                </div>
+                                <article class="category__item post post--medium">
+                                    <a class="category__link post__link box" href="#">
+                                        <span class="category__image-wrapper post__image-wrapper">
+                                            <img class="category__image post__image box" src="images/content/latest-posts-2.jpg" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="category__info">
+                                        <a class="category__info-title post__title" href="#">
+                                            Кто такие HR и почему студент не должен их бояться?
+                                        </a>
+                                         <div class="post__category">
+                                            Тонкости
+                                        </div>
+                                        <p class="category__description">
+                                            Да, этот вопрос терзает многих студентов. При чем эта проблема актуальна для всех: и для студента-первачка, и для тех, у кого диплом не за горами, и для «бюджетников», и для ребят...
+                                        </p>
+                                        <span class="category__date post__icon post__date">
+                                            29.04.2020
+                                        </span>
+
+                                        <span class="category__views post__icon post__views">
+                                            47
+                                        </span>
+                                    </div>
+                                </article>
+
+                                <article class="category__item post post--medium">
+                                    <a class="category__link post__link box" href="#">
+                                        <span class="category__image-wrapper post__image-wrapper">
+                                            <img class="category__image post__image box" src="images/content/latest-posts-2.jpg" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="category__info">
+                                        <a class="category__info-title post__title" href="#">
+                                            Кто такие HR и почему студент не должен их бояться?
+                                        </a>
+                                         <div class="post__category">
+                                            Тонкости
+                                        </div>
+                                        <p class="category__description">
+                                            Да, этот вопрос терзает многих студентов. При чем эта проблема актуальна для всех: и для студента-первачка, и для тех, у кого диплом не за горами, и для «бюджетников», и для ребят...
+                                        </p>
+                                        <span class="category__date post__icon post__date">
+                                            29.04.2020
+                                        </span>
+
+                                        <span class="category__views post__icon post__views">
+                                            47
+                                        </span>
+                                    </div>
+                                </article>
+
+                                <article class="category__item post post--medium">
+                                    <a class="category__link post__link box" href="#">
+                                        <span class="category__image-wrapper post__image-wrapper">
+                                            <img class="category__image post__image box" src="images/content/latest-posts-2.jpg" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="category__info">
+                                        <a class="category__info-title post__title" href="#">
+                                            Кто такие HR и почему студент не должен их бояться?
+                                        </a>
+                                         <div class="post__category">
+                                            Тонкости
+                                        </div>
+                                        <p class="category__description">
+                                            Да, этот вопрос терзает многих студентов. При чем эта проблема актуальна для всех: и для студента-первачка, и для тех, у кого диплом не за горами, и для «бюджетников», и для ребят...
+                                        </p>
+                                        <span class="category__date post__icon post__date">
+                                            29.04.2020
+                                        </span>
+
+                                        <span class="category__views post__icon post__views">
+                                            47
+                                        </span>
+                                    </div>
+                                </article>
+
+                                <article class="category__item post post--medium">
+                                    <a class="category__link post__link box" href="#">
+                                        <span class="category__image-wrapper post__image-wrapper">
+                                            <img class="category__image post__image box" src="images/content/latest-posts-2.jpg" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="category__info">
+                                        <a class="category__info-title post__title" href="#">
+                                            Кто такие HR и почему студент не должен их бояться?
+                                        </a>
+                                         <div class="post__category">
+                                            Тонкости
+                                        </div>
+                                        <p class="category__description">
+                                            Да, этот вопрос терзает многих студентов. При чем эта проблема актуальна для всех: и для студента-первачка, и для тех, у кого диплом не за горами, и для «бюджетников», и для ребят...
+                                        </p>
+                                        <span class="category__date post__icon post__date">
+                                            29.04.2020
+                                        </span>
+
+                                        <span class="category__views post__icon post__views">
+                                            47
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="category__aside">
+                                <div class="category__aside-title section-title">
+                                    Популярное
+                                </div>
+                                <a class="category__aside-link" href="#">
+                                    <span class="category__aside-wrapper">
+                                        <img class="category__aside-image box" src="images/content/latest-posts-2.jpg" alt="">
+                                    </span>
+                                    <span class="category__aside-title">
+                                        Кто такие HR и почему студент не должен их бояться?
+                                    </span>
+                                </a>
+                                <a class="category__aside-link" href="#">
+                                    <span class="category__aside-wrapper">
+                                        <img class="category__aside-image box" src="images/content/latest-posts-2.jpg" alt="">
+                                    </span>
+                                    <span class="category__aside-title">
+                                        Кто такие HR и почему студент не должен их бояться?
+                                    </span>
+                                </a>
+                                <a class="category__aside-link" href="#">
+                                    <span class="category__aside-wrapper">
+                                        <img class="category__aside-image box" src="images/content/latest-posts-2.jpg" alt="">
+                                    </span>
+                                    <span class="category__aside-title">
+                                        Кто такие HR и почему студент не должен их бояться?
+                                    </span>
+                                </a>
+                                <a class="category__aside-link" href="#">
+                                    <span class="category__aside-wrapper">
+                                        <img class="category__aside-image box" src="images/content/latest-posts-2.jpg" alt="">
+                                    </span>
+                                    <span class="category__aside-title">
+                                        Кто такие HR и почему студент не должен их бояться?
+                                    </span>
+                                </a>
+                                <a class="category__aside-link" href="#">
+                                    <span class="category__aside-wrapper">
+                                        <img class="category__aside-image box" src="images/content/latest-posts-2.jpg" alt="">
+                                    </span>
+                                    <span class="category__aside-title">
+                                        Кто такие HR и почему студент не должен их бояться?
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category__pagination pagination">
+                            <a class="pagination__arrow pagination__arrow--prev" href="#"></a>
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--current" href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        5
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">
+                                        57
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="pagination__arrow pagination__arrow--next" href="#"></a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="banner">
+                    <div class="container">
+                        <a class="banner__link" href="#" style="background-image: url(images/content/ads-image-1.jpg);">
+                            <span class="banner__text">
+                          Место для рекламы которое легко скрыть
+                      </span>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div> 
+       
+
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__item footer__item--support">
+                <a class="footer__logo" href="#">
+                    <img class="footer__logo-image" src="images/logo.png" alt="logo">
+                </a>
+                <div class="footer__text">
+                    При поддержке:
+                    <a class="footer__text-logo" href="#" style="background-image: url(images/icons/logo-small.svg);"></a>
+                </div>
+            </div>
+            <div class="footer__item">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Поиск работы
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Учеба и работа
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Тонкости
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Фриланс или офис?
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-title">
+                    Лучшие статьи на вашей почте
+                </div>
+                <form action="" class="footer__form">
+                    <input class="footer__email" type="email" placeholder="Ваш email" required>
+                    <label class="footer__email-label"></label>
+                    <button class="footer__btn" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer__copy">
+        <div class="container">
+            <div class="footer__copy-inner">
+                <ul class="footer__copy-list">
+                    <li class="footer__copy-item">© 2020 “Profit Blog”</li>
+                    <li class="footer__copy-item">Все права защищены</li>
+                    <li class="footer__copy-item">
+                        <a class="footer__copy-link" href="#">
+                                Условия использования
+                            </a>
+                    </li>
+                </ul>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#" style="background-image: url(images/icons/instagram-icon.svg);"></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#" style="background-image: url(images/icons/telegram-icon.svg);"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer> 
+            <footer class="footer footer--mobile">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__item footer__item--support">
+                <a class="footer__logo" href="#">
+                    <img class="footer__logo-image" src="images/logo.svg" alt="logo">
+                </a>
+               
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Поиск работы
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Учеба и работа
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Тонкости
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__link" href="#">
+                            Фриланс или офис?
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__item">
+                <div class="footer__item-title">
+                    Лучшие статьи на вашей почте
+                </div>
+                <form action="" class="footer__form">
+                    <input class="footer__email" type="email" placeholder="Ваш email" required>
+                    <label class="footer__email-label"></label>
+                    <button class="footer__btn" type="submit">Подписаться</button>
+                </form>
+                <div class="footer__text">
+                    При поддержке:
+                    <a class="footer__text-logo" href="#" style="background-image: url(images/icons/logo-small-mobile.svg);"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer__copy">
+        <div class="container">
+            <div class="footer__copy-inner">
+                <ul class="footer__copy-list">
+                    <li class="footer__copy-item">© 2020 “Profit Blog”</li>
+                    <li class="footer__copy-item footer__copy-item--rights">Все права защищены</li>
+                    <li class="footer__copy-item">
+                        <a class="footer__copy-link" href="#">
+                                Условия использования
+                        </a>
+                    </li>
+                </ul>             
+            </div>
+        </div>
+    </div>
+
+</footer>
+     
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
